@@ -14,6 +14,7 @@ import sifive.blocks.devices.uart.{PeripheryUARTKey, UARTParams}
 
 import sifive.fpgashells.shell.{DesignKey}
 import sifive.fpgashells.shell.xilinx.{VCU118ShellPMOD, VCU118DDRSize}
+//import sifive.fpgashells.ip.xilinx.xxv_ethernet._
 
 import testchipip.{SerialTLKey}
 
@@ -65,6 +66,7 @@ class WithVCU118Tweaks extends Config(
 )
 
 class RocketVCU118Config extends Config(
+  new freechips.rocketchip.subsystem.WithHypervisor ++
   new WithVCU118Tweaks ++
   new chipyard.RocketConfig
 )

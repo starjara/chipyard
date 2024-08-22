@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  7 14:11:31 2024
+# Process ID: 664687
+# Current directory: /home/jara/Desktop/RISC-V/chipyard
+# Command line: vivado
+# Log file: /home/jara/Desktop/RISC-V/chipyard/vivado.log
+# Journal file: /home/jara/Desktop/RISC-V/chipyard/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xcvu9p_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcvu9p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcvu9p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcvu9p_0]
+set_property PROGRAM.FILE {/home/jara/Desktop/RISC-V/chipyard/fpga/generated-src/chipyard.fpga.vcu118.VCU118FPGATestHarness.RocketVCU118Config/obj/VCU118FPGATestHarness.bit} [get_hw_devices xcvu9p_0]
+program_hw_devices [get_hw_devices xcvu9p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu9p_0] 0]
